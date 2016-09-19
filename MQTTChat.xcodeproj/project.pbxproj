@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2323922E1D8788F20087574B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2323922D1D8788F20087574B /* main.m */; };
+		232392311D8788F20087574B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 232392301D8788F20087574B /* AppDelegate.m */; };
+		232392391D8788F20087574B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 232392381D8788F20087574B /* Assets.xcassets */; };
+		2323923C1D8788F20087574B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2323923A1D8788F20087574B /* LaunchScreen.storyboard */; };
+		232392561D87937A0087574B /* KTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 232392551D87937A0087574B /* KTabBarController.m */; };
+		2323926E1D8797920087574B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2323926D1D8797920087574B /* MainViewController.m */; };
+		232392711D8797AC0087574B /* GroupChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 232392701D8797AC0087574B /* GroupChatViewController.m */; };
+		232392741D8797C30087574B /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 232392731D8797C30087574B /* FriendsViewController.m */; };
+		232392771D8797DA0087574B /* UsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 232392761D8797DA0087574B /* UsersViewController.m */; };
+		235A59081D8E2F5A0039978C /* tabbar_icon_me_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 235A59001D8E2F5A0039978C /* tabbar_icon_me_highlight@2x.png */; };
+		235A59091D8E2F5A0039978C /* tabbar_icon_me_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 235A59011D8E2F5A0039978C /* tabbar_icon_me_normal@2x.png */; };
+		235A590A1D8E2F5A0039978C /* tabbar_icon_media_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 235A59021D8E2F5A0039978C /* tabbar_icon_media_highlight@2x.png */; };
+		235A590B1D8E2F5A0039978C /* tabbar_icon_media_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 235A59031D8E2F5A0039978C /* tabbar_icon_media_normal@2x.png */; };
+		235A590C1D8E2F5A0039978C /* tabbar_icon_news_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 235A59041D8E2F5A0039978C /* tabbar_icon_news_highlight@2x.png */; };
+		235A590D1D8E2F5A0039978C /* tabbar_icon_news_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 235A59051D8E2F5A0039978C /* tabbar_icon_news_normal@2x.png */; };
+		235A590E1D8E2F5A0039978C /* tabbar_icon_reader_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 235A59061D8E2F5A0039978C /* tabbar_icon_reader_highlight@2x.png */; };
+		235A590F1D8E2F5A0039978C /* tabbar_icon_reader_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 235A59071D8E2F5A0039978C /* tabbar_icon_reader_normal@2x.png */; };
+		235A59131D8E74760039978C /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A59121D8E74760039978C /* ChatViewController.m */; };
+		235A59161D8E7AB30039978C /* ChatViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A59151D8E7AB30039978C /* ChatViewCell.m */; };
+		236E34C41D89285900ECE83D /* MQTTManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 236E34C31D89285900ECE83D /* MQTTManager.m */; };
+		A669B693D52675E9B1EF7D33 /* libPods-MQTTChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D375E249DC18E47FFFDFB507 /* libPods-MQTTChat.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		232392291D8788F20087574B /* MQTTChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQTTChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2323922D1D8788F20087574B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2323922F1D8788F20087574B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		232392301D8788F20087574B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		232392381D8788F20087574B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2323923B1D8788F20087574B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2323923D1D8788F20087574B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		232392541D87937A0087574B /* KTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTabBarController.h; sourceTree = "<group>"; };
+		232392551D87937A0087574B /* KTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTabBarController.m; sourceTree = "<group>"; };
+		2323926C1D8797920087574B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		2323926D1D8797920087574B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		2323926F1D8797AC0087574B /* GroupChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupChatViewController.h; sourceTree = "<group>"; };
+		232392701D8797AC0087574B /* GroupChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupChatViewController.m; sourceTree = "<group>"; };
+		232392721D8797C30087574B /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		232392731D8797C30087574B /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		232392751D8797DA0087574B /* UsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersViewController.h; sourceTree = "<group>"; };
+		232392761D8797DA0087574B /* UsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersViewController.m; sourceTree = "<group>"; };
+		235A59001D8E2F5A0039978C /* tabbar_icon_me_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_icon_me_highlight@2x.png"; sourceTree = "<group>"; };
+		235A59011D8E2F5A0039978C /* tabbar_icon_me_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_icon_me_normal@2x.png"; sourceTree = "<group>"; };
+		235A59021D8E2F5A0039978C /* tabbar_icon_media_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_icon_media_highlight@2x.png"; sourceTree = "<group>"; };
+		235A59031D8E2F5A0039978C /* tabbar_icon_media_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_icon_media_normal@2x.png"; sourceTree = "<group>"; };
+		235A59041D8E2F5A0039978C /* tabbar_icon_news_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_icon_news_highlight@2x.png"; sourceTree = "<group>"; };
+		235A59051D8E2F5A0039978C /* tabbar_icon_news_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_icon_news_normal@2x.png"; sourceTree = "<group>"; };
+		235A59061D8E2F5A0039978C /* tabbar_icon_reader_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_icon_reader_highlight@2x.png"; sourceTree = "<group>"; };
+		235A59071D8E2F5A0039978C /* tabbar_icon_reader_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_icon_reader_normal@2x.png"; sourceTree = "<group>"; };
+		235A59101D8E5FCA0039978C /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		235A59111D8E74760039978C /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		235A59121D8E74760039978C /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		235A59141D8E7AB30039978C /* ChatViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewCell.h; sourceTree = "<group>"; };
+		235A59151D8E7AB30039978C /* ChatViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewCell.m; sourceTree = "<group>"; };
+		236E34C21D89285900ECE83D /* MQTTManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTManager.h; sourceTree = "<group>"; };
+		236E34C31D89285900ECE83D /* MQTTManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTManager.m; sourceTree = "<group>"; };
+		D375E249DC18E47FFFDFB507 /* libPods-MQTTChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MQTTChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5547D568E5C366C004641ED /* Pods-MQTTChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MQTTChat/Pods-MQTTChat.release.xcconfig"; sourceTree = "<group>"; };
+		FAB8C410BF14C32C409C04FF /* Pods-MQTTChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MQTTChat/Pods-MQTTChat.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		232392261D8788F20087574B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A669B693D52675E9B1EF7D33 /* libPods-MQTTChat.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		232392201D8788F20087574B = {
+			isa = PBXGroup;
+			children = (
+				2323922B1D8788F20087574B /* MQTTChat */,
+				2323922A1D8788F20087574B /* Products */,
+				7716FC02165ECBB573A143C4 /* Pods */,
+				5E3D0965AAC3A2228568A537 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2323922A1D8788F20087574B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				232392291D8788F20087574B /* MQTTChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2323922B1D8788F20087574B /* MQTTChat */ = {
+			isa = PBXGroup;
+			children = (
+				236E34C11D891A3200ECE83D /* TabBarIcons */,
+				232392781D879A2F0087574B /* Manager */,
+				232392571D8795AF0087574B /* Classes */,
+				232392431D8791B30087574B /* Category */,
+				2323922F1D8788F20087574B /* AppDelegate.h */,
+				232392301D8788F20087574B /* AppDelegate.m */,
+				232392541D87937A0087574B /* KTabBarController.h */,
+				232392551D87937A0087574B /* KTabBarController.m */,
+				232392381D8788F20087574B /* Assets.xcassets */,
+				2323923A1D8788F20087574B /* LaunchScreen.storyboard */,
+				2323923D1D8788F20087574B /* Info.plist */,
+				2323922C1D8788F20087574B /* Supporting Files */,
+			);
+			path = MQTTChat;
+			sourceTree = "<group>";
+		};
+		2323922C1D8788F20087574B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2323922D1D8788F20087574B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		232392431D8791B30087574B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		232392571D8795AF0087574B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				232392581D8795AF0087574B /* Friends */,
+				2323925D1D8795AF0087574B /* GroupChat */,
+				232392621D8795AF0087574B /* Main */,
+				232392671D8795AF0087574B /* Users */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		232392581D8795AF0087574B /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				232392591D8795AF0087574B /* FriendsControllers */,
+				2323925A1D8795AF0087574B /* FriendsImages */,
+				2323925B1D8795AF0087574B /* FriendsModels */,
+				2323925C1D8795AF0087574B /* FriendsViews */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		232392591D8795AF0087574B /* FriendsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				232392721D8797C30087574B /* FriendsViewController.h */,
+				232392731D8797C30087574B /* FriendsViewController.m */,
+			);
+			path = FriendsControllers;
+			sourceTree = "<group>";
+		};
+		2323925A1D8795AF0087574B /* FriendsImages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FriendsImages;
+			sourceTree = "<group>";
+		};
+		2323925B1D8795AF0087574B /* FriendsModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FriendsModels;
+			sourceTree = "<group>";
+		};
+		2323925C1D8795AF0087574B /* FriendsViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FriendsViews;
+			sourceTree = "<group>";
+		};
+		2323925D1D8795AF0087574B /* GroupChat */ = {
+			isa = PBXGroup;
+			children = (
+				2323925E1D8795AF0087574B /* GroupChatControllers */,
+				2323925F1D8795AF0087574B /* GroupChatImages */,
+				232392601D8795AF0087574B /* GroupChatModels */,
+				232392611D8795AF0087574B /* GroupChatViews */,
+			);
+			path = GroupChat;
+			sourceTree = "<group>";
+		};
+		2323925E1D8795AF0087574B /* GroupChatControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2323926F1D8797AC0087574B /* GroupChatViewController.h */,
+				232392701D8797AC0087574B /* GroupChatViewController.m */,
+			);
+			path = GroupChatControllers;
+			sourceTree = "<group>";
+		};
+		2323925F1D8795AF0087574B /* GroupChatImages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GroupChatImages;
+			sourceTree = "<group>";
+		};
+		232392601D8795AF0087574B /* GroupChatModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GroupChatModels;
+			sourceTree = "<group>";
+		};
+		232392611D8795AF0087574B /* GroupChatViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GroupChatViews;
+			sourceTree = "<group>";
+		};
+		232392621D8795AF0087574B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				232392631D8795AF0087574B /* MainControllers */,
+				232392641D8795AF0087574B /* MainImages */,
+				232392651D8795AF0087574B /* MainModels */,
+				232392661D8795AF0087574B /* MainViews */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		232392631D8795AF0087574B /* MainControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2323926C1D8797920087574B /* MainViewController.h */,
+				2323926D1D8797920087574B /* MainViewController.m */,
+				235A59111D8E74760039978C /* ChatViewController.h */,
+				235A59121D8E74760039978C /* ChatViewController.m */,
+			);
+			path = MainControllers;
+			sourceTree = "<group>";
+		};
+		232392641D8795AF0087574B /* MainImages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainImages;
+			sourceTree = "<group>";
+		};
+		232392651D8795AF0087574B /* MainModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainModels;
+			sourceTree = "<group>";
+		};
+		232392661D8795AF0087574B /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				235A59141D8E7AB30039978C /* ChatViewCell.h */,
+				235A59151D8E7AB30039978C /* ChatViewCell.m */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		232392671D8795AF0087574B /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				232392681D8795AF0087574B /* UsersControllers */,
+				232392691D8795AF0087574B /* UsersImages */,
+				2323926A1D8795AF0087574B /* UsersModels */,
+				2323926B1D8795AF0087574B /* UsersViews */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		232392681D8795AF0087574B /* UsersControllers */ = {
+			isa = PBXGroup;
+			children = (
+				232392751D8797DA0087574B /* UsersViewController.h */,
+				232392761D8797DA0087574B /* UsersViewController.m */,
+			);
+			path = UsersControllers;
+			sourceTree = "<group>";
+		};
+		232392691D8795AF0087574B /* UsersImages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UsersImages;
+			sourceTree = "<group>";
+		};
+		2323926A1D8795AF0087574B /* UsersModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UsersModels;
+			sourceTree = "<group>";
+		};
+		2323926B1D8795AF0087574B /* UsersViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UsersViews;
+			sourceTree = "<group>";
+		};
+		232392781D879A2F0087574B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				236E34C21D89285900ECE83D /* MQTTManager.h */,
+				236E34C31D89285900ECE83D /* MQTTManager.m */,
+				235A59101D8E5FCA0039978C /* Header.h */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		236E34C11D891A3200ECE83D /* TabBarIcons */ = {
+			isa = PBXGroup;
+			children = (
+				235A59001D8E2F5A0039978C /* tabbar_icon_me_highlight@2x.png */,
+				235A59011D8E2F5A0039978C /* tabbar_icon_me_normal@2x.png */,
+				235A59021D8E2F5A0039978C /* tabbar_icon_media_highlight@2x.png */,
+				235A59031D8E2F5A0039978C /* tabbar_icon_media_normal@2x.png */,
+				235A59041D8E2F5A0039978C /* tabbar_icon_news_highlight@2x.png */,
+				235A59051D8E2F5A0039978C /* tabbar_icon_news_normal@2x.png */,
+				235A59061D8E2F5A0039978C /* tabbar_icon_reader_highlight@2x.png */,
+				235A59071D8E2F5A0039978C /* tabbar_icon_reader_normal@2x.png */,
+			);
+			path = TabBarIcons;
+			sourceTree = "<group>";
+		};
+		5E3D0965AAC3A2228568A537 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D375E249DC18E47FFFDFB507 /* libPods-MQTTChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7716FC02165ECBB573A143C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAB8C410BF14C32C409C04FF /* Pods-MQTTChat.debug.xcconfig */,
+				F5547D568E5C366C004641ED /* Pods-MQTTChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		232392281D8788F20087574B /* MQTTChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 232392401D8788F20087574B /* Build configuration list for PBXNativeTarget "MQTTChat" */;
+			buildPhases = (
+				2CD9C4378B0E96A277EF698B /* 📦 Check Pods Manifest.lock */,
+				232392251D8788F20087574B /* Sources */,
+				232392261D8788F20087574B /* Frameworks */,
+				232392271D8788F20087574B /* Resources */,
+				B5EB0309AE84DBC211587F6B /* 📦 Embed Pods Frameworks */,
+				C899FEEB9D1BB17DEAA7A9C6 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MQTTChat;
+			productName = MQTTChat;
+			productReference = 232392291D8788F20087574B /* MQTTChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		232392211D8788F20087574B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					232392281D8788F20087574B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 232392241D8788F20087574B /* Build configuration list for PBXProject "MQTTChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 232392201D8788F20087574B;
+			productRefGroup = 2323922A1D8788F20087574B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				232392281D8788F20087574B /* MQTTChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		232392271D8788F20087574B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235A590E1D8E2F5A0039978C /* tabbar_icon_reader_highlight@2x.png in Resources */,
+				2323923C1D8788F20087574B /* LaunchScreen.storyboard in Resources */,
+				235A590B1D8E2F5A0039978C /* tabbar_icon_media_normal@2x.png in Resources */,
+				235A590C1D8E2F5A0039978C /* tabbar_icon_news_highlight@2x.png in Resources */,
+				235A590F1D8E2F5A0039978C /* tabbar_icon_reader_normal@2x.png in Resources */,
+				235A590D1D8E2F5A0039978C /* tabbar_icon_news_normal@2x.png in Resources */,
+				232392391D8788F20087574B /* Assets.xcassets in Resources */,
+				235A59091D8E2F5A0039978C /* tabbar_icon_me_normal@2x.png in Resources */,
+				235A590A1D8E2F5A0039978C /* tabbar_icon_media_highlight@2x.png in Resources */,
+				235A59081D8E2F5A0039978C /* tabbar_icon_me_highlight@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CD9C4378B0E96A277EF698B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B5EB0309AE84DBC211587F6B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MQTTChat/Pods-MQTTChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C899FEEB9D1BB17DEAA7A9C6 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MQTTChat/Pods-MQTTChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		232392251D8788F20087574B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				232392771D8797DA0087574B /* UsersViewController.m in Sources */,
+				236E34C41D89285900ECE83D /* MQTTManager.m in Sources */,
+				235A59161D8E7AB30039978C /* ChatViewCell.m in Sources */,
+				232392741D8797C30087574B /* FriendsViewController.m in Sources */,
+				232392561D87937A0087574B /* KTabBarController.m in Sources */,
+				232392711D8797AC0087574B /* GroupChatViewController.m in Sources */,
+				232392311D8788F20087574B /* AppDelegate.m in Sources */,
+				2323922E1D8788F20087574B /* main.m in Sources */,
+				2323926E1D8797920087574B /* MainViewController.m in Sources */,
+				235A59131D8E74760039978C /* ChatViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2323923A1D8788F20087574B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2323923B1D8788F20087574B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2323923E1D8788F20087574B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2323923F1D8788F20087574B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		232392411D8788F20087574B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAB8C410BF14C32C409C04FF /* Pods-MQTTChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MQTTChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Kinleon.MQTTChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		232392421D8788F20087574B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5547D568E5C366C004641ED /* Pods-MQTTChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MQTTChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Kinleon.MQTTChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		232392241D8788F20087574B /* Build configuration list for PBXProject "MQTTChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2323923E1D8788F20087574B /* Debug */,
+				2323923F1D8788F20087574B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		232392401D8788F20087574B /* Build configuration list for PBXNativeTarget "MQTTChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				232392411D8788F20087574B /* Debug */,
+				232392421D8788F20087574B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 232392211D8788F20087574B /* Project object */;
+}
