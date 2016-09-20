@@ -138,47 +138,44 @@
     
     //上移动画options
     
-//    UIViewAnimationOptions options = (UIViewAnimationOptions)[[info valueForKey:UIKeyboardAnimationCurveUserInfoKey] integerValue] << 16;
-//    
-//    [UIView animateKeyframesWithDuration:animationDuration delay:0 options:options animations:^{
-//        
-//        self.tableView.transform = CGAffineTransformMakeTranslation(0, -keyboardHeight + 64);
-//        self.toolBar.transform = CGAffineTransformMakeTranslation(0, -keyboardHeight + 64);
-//        
-//    } completion:nil];
+    NSInteger options = [[info valueForKey:UIKeyboardAnimationCurveUserInfoKey] integerValue] << 16;
     
-    CGRect frame = self.tableView.frame;
-    frame.size.height -= keyboardHeight;
-    self.tableView.frame = frame;
+    [UIView animateKeyframesWithDuration:animationDuration delay:0 options:options animations:^{
+        CGRect frame = self.tableView.frame;
+        frame.size.height -= keyboardHeight;
+        self.tableView.frame = frame;
+        
+        CGRect toolBarFrame = self.toolBar.frame;
+        toolBarFrame.origin.y -= keyboardHeight;
+        self.toolBar.frame = toolBarFrame;
+        
+        if (self.tableView.contentSize.height > self.tableView.frame.size.height)
+        {
+            CGPoint offset = CGPointMake(0, self.tableView.contentSize.height - self.tableView.frame.size.height);
+            [self.tableView setContentOffset:offset animated:YES];
+        }
+        
+    } completion:nil];
     
-    CGRect toolBarFrame = self.toolBar.frame;
-    toolBarFrame.origin.y -= keyboardHeight;
-    self.toolBar.frame = toolBarFrame;
-    
-    if (self.tableView.contentSize.height > self.tableView.frame.size.height)
-    {
-        CGPoint offset = CGPointMake(0, self.tableView.contentSize.height - self.tableView.frame.size.height);
-        [self.tableView setContentOffset:offset animated:YES];
-    }
 }
 
 - (void)keyboardWillDisappear:(NSNotification *)noti
 {
     NSDictionary *info = [noti userInfo];
     
+    NSLog(@"%@",info);
     //取出动画时长
     
     CGFloat animationDuration = [[info valueForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
     
     //下移动画options
     
-    UIViewAnimationOptions options = (UIViewAnimationOptions)[[info valueForKey:UIKeyboardAnimationCurveUserInfoKey] integerValue] << 16;
+    NSInteger options = [[info valueForKey:UIKeyboardAnimationCurveUserInfoKey] integerValue] << 16;
     
     //回复动画
     
     [UIView animateKeyframesWithDuration:animationDuration delay:0 options:options animations:^{
         
-//        self.table.transform = CGAffineTransformIdentity;
         
     } completion:nil];
     
@@ -188,6 +185,11 @@
 {
     NSLog(@"开始输入");
     return YES;
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self.textView endEditing:YES];
 }
 
 - (void)didReceiveMemoryWarning {
