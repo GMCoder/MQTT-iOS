@@ -175,8 +175,8 @@
     //回复动画
     
     [UIView animateKeyframesWithDuration:animationDuration delay:0 options:options animations:^{
-        
-        
+        self.tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 50);
+        self.toolBar.frame = CGRectMake(0, self.view.frame.size.height - 50, self.view.frame.size.width, 50);
     } completion:nil];
     
 }
