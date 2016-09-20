@@ -192,6 +192,13 @@
     [self.textView endEditing:YES];
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if (self.toolBar.frame.origin.y < self.view.frame.size.height - 50) {
+        [self.textView endEditing:YES];
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
