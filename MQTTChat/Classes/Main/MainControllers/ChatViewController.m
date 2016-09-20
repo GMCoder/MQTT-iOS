@@ -25,7 +25,6 @@
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 50) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        _tableView.backgroundColor = [UIColor yellowColor];
     }
     return _tableView;
 }
@@ -53,6 +52,7 @@
 {
     if (!_sourceArr) {
         _sourceArr = [NSMutableArray array];
+        [_sourceArr addObjectsFromArray:[NSArray arrayWithObjects:@"0",@"1",@"2",@"3",@"4",@"5", nil]];
     }
     return _sourceArr;
 }
@@ -150,6 +150,16 @@
     CGRect frame = self.tableView.frame;
     frame.size.height -= keyboardHeight;
     self.tableView.frame = frame;
+    
+    CGRect toolBarFrame = self.toolBar.frame;
+    toolBarFrame.origin.y -= keyboardHeight;
+    self.toolBar.frame = toolBarFrame;
+    
+    if (self.tableView.contentSize.height > self.tableView.frame.size.height)
+    {
+        CGPoint offset = CGPointMake(0, self.tableView.contentSize.height - self.tableView.frame.size.height);
+        [self.tableView setContentOffset:offset animated:YES];
+    }
 }
 
 - (void)keyboardWillDisappear:(NSNotification *)noti
