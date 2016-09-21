@@ -58,6 +58,7 @@
         [_sendBtn setTitle:@"send" forState:UIControlStateNormal];
         _sendBtn.frame = CGRectMake(self.view.frame.size.width - 5 - 45, 5, 40, 40);
         [_sendBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_sendBtn addTarget:self action:@selector(sendMessage) forControlEvents:UIControlEventTouchUpInside];
     }
     return _sendBtn;
 }
@@ -127,6 +128,11 @@
     NSLog(@"%@",dict);
     [self.sourceArr addObject:[dict objectForKey:@"message"]];
     [self.tableView reloadData];
+}
+
+- (void)sendMessage
+{
+    []
 }
 
 - (void)keyboardWillAppear:(NSNotification *)noti
@@ -200,11 +206,6 @@
 {
     NSLog(@"开始输入");
     return YES;
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    [self.textView endEditing:YES];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView

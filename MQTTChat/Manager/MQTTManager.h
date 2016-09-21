@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(UInt8, SubscribeTopicLevel){
+typedef NS_ENUM(UInt8, QosLevel){
     AtMostOnce = 0,
     AtLeastOnce = 1,
     ExactlyOnce = 2
@@ -30,6 +30,8 @@ typedef NS_ENUM(UInt8, SubscribeTopicLevel){
 
 - (void)disconnectToHost;
 
-- (UInt16)subscribeToTopic:(NSString *)topic atLevel:(SubscribeTopicLevel)level;
+- (UInt16)subscribeToTopic:(NSString *)topic atLevel:(QosLevel)level;
+
+- (UInt16)sendMessage:(NSData *)message topic:(NSString *)topic qos:(QosLevel)qos retain:(BOOL)retain;
 
 @end
