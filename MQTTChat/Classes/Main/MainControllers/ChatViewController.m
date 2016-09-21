@@ -15,6 +15,7 @@
 @property (nonatomic, copy) NSMutableArray *sourceArr;
 @property (nonatomic, strong) UIView *toolBar;
 @property (nonatomic, strong) UITextView *textView;
+@property (nonatomic, strong) UIButton *sendBtn;
 @end
 
 @implementation ChatViewController
@@ -41,11 +42,24 @@
 - (UITextView *)textView
 {
     if (!_textView) {
-        _textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 5, self.view.frame.size.width - 20, 40)];
+        _textView = [[UITextView alloc] initWithFrame:CGRectMake(5, 5, self.view.frame.size.width - 55, 40)];
         _textView.delegate = self;
         _textView.backgroundColor = [UIColor greenColor];
+        _textView.layer.masksToBounds = YES;
+        _textView.layer.cornerRadius = 5;
     }
     return _textView;
+}
+
+- (UIButton *)sendBtn
+{
+    if (!_sendBtn) {
+        _sendBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_sendBtn setTitle:@"send" forState:UIControlStateNormal];
+        _sendBtn.frame = CGRectMake(self.view.frame.size.width - 5 - 45, 5, 40, 40);
+        [_sendBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    }
+    return _sendBtn;
 }
 
 - (NSMutableArray *)sourceArr
@@ -95,6 +109,7 @@
     [self.view addSubview:self.tableView];
     [self.view addSubview:self.toolBar];
     [self.toolBar addSubview:self.textView];
+    [self.toolBar addSubview:self.sendBtn];
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSLog(@"%@",[NSThread currentThread]);
