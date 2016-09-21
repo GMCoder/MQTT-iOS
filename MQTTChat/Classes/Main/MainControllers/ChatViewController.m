@@ -132,7 +132,15 @@
 
 - (void)sendMessage
 {
-    []
+    NSDictionary *sendDict = [NSDictionary dictionaryWithObject:self.textView.text forKey:@"message"];
+    NSData *sendData = [NSJSONSerialization dataWithJSONObject:sendDict options:NSJSONWritingPrettyPrinted error:nil];
+    
+    UInt16 success = [[MQTTManager shareMQTTManager] sendMessage:sendData topic:self.topicStr qos:AtMostOnce retain:NO];
+    if (success != 0) {
+        NSLog(@"发送成功");
+    }else{
+        NSLog(@"发送失败");
+    }
 }
 
 - (void)keyboardWillAppear:(NSNotification *)noti
