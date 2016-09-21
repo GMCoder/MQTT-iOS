@@ -88,7 +88,7 @@ static MQTTManager *manager = nil;
     }
 }
 
-- (UInt16)subscribeToTopic:(NSString *)topic atLevel:(SubscribeTopicLevel)level
+- (UInt16)subscribeToTopic:(NSString *)topic atLevel:(QosLevel)level
 {
     return [self.sessionManager.session subscribeToTopic:topic atLevel:(UInt8)level subscribeHandler:^(NSError *error, NSArray<NSNumber *> *gQoss) {
         if (error) {
@@ -97,6 +97,11 @@ static MQTTManager *manager = nil;
             NSLog(@"关注主题成功");
         }
     }];
+}
+
+- (UInt16)sendMessage:(NSData *)message topic:(NSString *)topic qos:(QosLevel)qos retain:(BOOL)retain
+{
+    return [self.sessionManager sendData:message topic:topic qos:(UInt8)qos retain:retain];
 }
 
 @end
