@@ -135,7 +135,7 @@
     NSDictionary *sendDict = [NSDictionary dictionaryWithObject:self.textView.text forKey:@"message"];
     NSData *sendData = [NSJSONSerialization dataWithJSONObject:sendDict options:NSJSONWritingPrettyPrinted error:nil];
     
-    UInt16 success = [[MQTTManager shareMQTTManager] sendMessage:sendData topic:self.topicStr qos:AtMostOnce retain:NO];
+    UInt16 success = [[MQTTManager shareMQTTManager] sendMessage:sendData topic:self.topicStr qos:ExactlyOnce retain:NO];
     if (success != 0) {
         NSLog(@"发送成功");
     }else{
