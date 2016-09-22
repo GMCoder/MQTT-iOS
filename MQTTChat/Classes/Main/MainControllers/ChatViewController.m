@@ -147,8 +147,6 @@
 {
     NSDictionary *info = [noti userInfo];
     
-    NSLog(@"%@",info);
-    
     //取出动画时长
     
     CGFloat animationDuration = [[info valueForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
@@ -191,8 +189,6 @@
 - (void)keyboardWillDisappear:(NSNotification *)noti
 {
     NSDictionary *info = [noti userInfo];
-    
-    NSLog(@"%@",info);
     //取出动画时长
     
     CGFloat animationDuration = [[info valueForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
