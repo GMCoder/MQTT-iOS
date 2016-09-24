@@ -67,7 +67,6 @@
 {
     if (!_sourceArr) {
         _sourceArr = [NSMutableArray array];
-        [_sourceArr addObjectsFromArray:[NSArray arrayWithObjects:@"0",@"1",@"2",@"3",@"4",@"5", nil]];
     }
     return _sourceArr;
 }
