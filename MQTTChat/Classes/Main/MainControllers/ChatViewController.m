@@ -10,6 +10,10 @@
 #import "MQTTManager.h"
 #import "ChatViewCell.h"
 
+#ifndef __OPTIMIZE__
+#define NSLog(...) printf("%f %s\n",[[NSDate date]timeIntervalSince1970],[[NSString stringWithFormat:__VA_ARGS__]UTF8String]);
+#endif
+
 @interface ChatViewController ()<UITableViewDelegate,UITableViewDataSource,MQTTManagerDelegate,UITextViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, copy) NSMutableArray *sourceArr;
@@ -145,6 +149,8 @@
 - (void)keyboardWillAppear:(NSNotification *)noti
 {
     NSDictionary *info = [noti userInfo];
+    
+    NSLog(@"键盘出现");
     
     //取出动画时长
     
